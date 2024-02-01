@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(255, 255, 255);
+  background-image: linear-gradient(to right, #00b09b, #96c93d);
+  font-size: 20px;
+}
+
+.wrapper {
+  max-height: 900px;
+  border-radius: 20px;
+  width: 600px;
+  padding: 20px;
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 25% 50% 25%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.wrapper .top-panel {
+  grid-row: 1;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+}
+.wrapper .top-panel .warning {
+  margin-top: 10px;
+  font-size: 14px;
+  color: tomato;
+  position: absolute;
+  bottom: 40px;
+}
+.wrapper .top-panel .input {
+  border-radius: 50px;
+  font-size: 25px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  transition: 0.3s ease-in;
+  background-color: #c4eeb1;
+}
+.wrapper .top-panel .input:focus {
+  background-color: #96c93d;
+}
+.wrapper .top-panel .search {
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: #c4eeb1;
+  transition: 0.3s ease-in;
+}
+.wrapper .top-panel .search:hover {
+  transform: scale(1.05);
+  background-color: #96c93d;
+}
+.wrapper .top-panel .search img {
+  height: 60%;
+  width: 60%;
+}
+.wrapper .central-panel {
+  grid-row: 2;
+  display: flex;
+  justify-content: center;
+}
+.wrapper .central-panel .temperature {
+  font-size: 25px;
+}
+.wrapper .central-panel .main-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.wrapper .central-panel .main-info img {
+  height: 250px;
+  width: 250px;
+  margin-top: -20px;
+}
+.wrapper .bottom-panel {
+  grid-row: 3;
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+}
+.wrapper .bottom-panel::after {
+  content: "";
+  width: 1px;
+  height: 150px;
+  background-color: rgba(173, 175, 173, 0.2);
+  position: absolute;
+  top: 20px;
+}
+.wrapper .bottom-panel .headings p,
+.wrapper .bottom-panel .weather-info p {
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+}
+.wrapper .bottom-panel .weather-info p {
+  padding-right: 30px;
+}
+
+.top-panel,
+.central-panel,
+.bottom-panel {
+  padding: 20px;
+  box-sizing: border-box;
+}/*# sourceMappingURL=style.css.map */

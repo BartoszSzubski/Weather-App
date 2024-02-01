@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="top-panel">
+        <input type="text" class="input" placeholder="Enter City name" />
+        <button class="search">
+          <img src="images/loupe.png" alt="loup image" />
+        </button>
+        <p class="warning"></p>
+      </div>
+      <div class="central-panel">
+        <div class="main-info">
+          <img
+            class="temperature-photo"
+            src="./images/suntest.webp"
+            alt="image of weather"
+            class="photo"
+          />
+          <p class="temperature"></p>
+          <div>
+            <h3 class="city-name"></h3>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-panel">
+        <div class="headings">
+          <p>Weather:</p>
+          <p>Humidity:</p>
+          <p>Wind:</p>
+        </div>
+        <div class="weather-info">
+          <p class="weather"></p>
+          <p class="humidity"></p>
+          <p class="wind"></p>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
